@@ -1,0 +1,356 @@
+/* GERAL */
+
+:root {
+    --text-color: #667085;
+    --main-color: #8E2424;
+    --title-color: #101828;
+}
+
+* {
+    /* margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; */
+    font-family: "Inter", "sans-serif";
+}
+
+body {
+    background-color: #FFF;
+    margin: 0px;
+}
+
+/* BARRA DE NAVEGAÇÃO */
+
+.navbar {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 32px;
+}
+
+.logo {
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: 200px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /* NÃO FUNCIONA SEM DISPLAY FLEX/GRID */
+    color: #3A404E;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.logo-img {
+    width: 27px;
+    height: 27px;
+}
+
+nav ul {
+    display: flex;
+    gap: 40px;
+    padding: 0px;
+}
+
+nav li {
+    list-style: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    margin-right: 2rem;
+}
+
+.navigation-actions {
+    width: 200px;
+    display: flex;
+    gap: 12px;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    border-radius: 8px;
+    height: 44px;
+    padding: 0px 15px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.red {
+    background-color: var(--main-color);
+    color: #FFF;
+}
+
+/* CABEÇALHO */
+
+header {
+    /* height: 407px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 96px 0px;
+    gap: 24px;
+}
+
+.header-span,
+.depoimentos-text {
+    color: var(--main-color);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.header-title {
+    color: var(--title-color);
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: -0.02rem;
+    margin: 0px;
+}
+
+.header-text {
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    margin: 0px;
+}
+
+/* MÉTRICAS */
+
+.metrics {
+    /* height: 288px; */
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 0px 96px;
+}
+
+.metrics-item {
+    width: 250px;
+}
+
+.metrics-span {
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 72px;
+    letter-spacing: -0.02rem;
+}
+
+.metrics-title {
+    color: var(--title-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 0px;
+}
+
+.metrics-text {
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    margin: 0px;
+}
+
+/* EQUIPE */
+
+#equipe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 96px 0px 0px 0px;
+    gap: 32px;
+}
+
+.equipe-span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: var(--main-color);
+    background-color: #8E24240D;
+    border-radius: 16px;
+    padding: 8px;
+}
+
+.equipe-title {
+    color: var(--title-color);
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    margin: 0px;
+}
+
+.equipe-text {
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0px;
+}
+
+/* VAGAS */
+
+#vagas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 32px;
+    gap: 32px;
+    margin-top: 20px;
+}
+
+.vagas-span {
+    color: var(--title-color);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.vagas-title {
+    color: var(--title-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0px;
+}
+
+.vagas-item {
+    box-sizing: border-box;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 24px;
+    border: 1px solid #EAECF0;
+    border-radius: 16px;
+}
+
+.vagas-desc {
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.vagas-design,
+.vagas-dev {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+p {
+    margin: 0px;
+}
+
+/* DEPOIMENTOS */
+
+#depoimentos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.depoimentos-title {
+    color: var(--title-color);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 44px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    margin: 0px;
+}
+
+.depoimentos-nome {
+    color: var(--title-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.depoimentos-funcao {
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/* RODAPÉ */
+
+footer {
+    background-color: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px 10px 0px;
+}
+
+.footer-title {
+    color: var(--title-color);
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    margin: 10px;
+}
+
+.footer-text {
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.footer-input-email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 12px 14px 12px 16px;
+    gap: 8px;
+}
+
+#footer-email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 12px 14px 12px 16px;
+    gap: 8px;
+    width: 360px;
+    height: 44px;
+    border: 1px solid #D0D5DD;
+    border-radius: 8px;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+}
+
+input:focus {
+    outline: none;
+}
+
+.footer-desc {
+    color: #98A2B3;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 30px;
+}
